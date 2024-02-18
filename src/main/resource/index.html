@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobilletter</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="content-container">
+        <div class="featured-content"></div>
+
+        <div class="form-container">
+
+            <h1>Bestill kinobilletter</h1>
+
+            <form class="form-box">
+                <label for="film">Velg film:</label>
+                <select name="film" id="film" required>
+                    <option selected disabled hidden>--Velg her--</option>
+                    <option value="Little Women">Little Women</option>
+                    <option value="Imagine Me & You (2005)">Imagine Me & You (2005)</option>
+                    <option value="Puss in Boots: The Last Wish">Puss in Boots: The Last Wish</option>
+                    <option value="Barbie">Barbie</option>
+                    <option value="Kill Bill: Volume 1 (2003)">Kill Bill: Volume 1 (2003)</option>
+                    <option value="Mean Girls">Mean Girls</option>
+                    <option value="The Boy and the Heron">The Boy and the Heron</option>
+                    <option value="Goodfellas (1990)">Goodfellas (1990)</option>
+                </select><br>
+
+
+                <label for="amount">Antall</label>
+                <input class="input-field" type="number" id="amount" name="amount" required /><br><br>
+
+                <label for="fname">Fornavn</label>
+                <input class="input-field" type="text" id="fname" name="fname" required /><br>
+
+                <label for="lname">Etternavn</label>
+                <input class="input-field" type="text" id="lname" name="lname" required /><br>
+
+                <label for="telnr">Telefonnr</label>
+                <input class="input-field" type="text" id="telnr" name="telnr" required /><br>
+
+                <label for="email">Epost</label>
+                <input class="input-field" type="text" id="email" name="email" required /><br>
+            </form>
+
+            <button id="submit" onclick="saveInput()">Kjøp billett</button><br>
+
+            <h2>Alle billetter</h2>
+            <section id="billetter"></section>
+
+            <button id="reset" onclick="deleteAll()">Slett alle billettene</button><br>
+
+
+        </div>
+    </div>
+</div>
+
+
+<script src="./app.js" async></script>
+
+</body>
+</html>
